@@ -5,6 +5,7 @@
     <title>Register</title>
 </head>
 <body>
+    <%- include('components/nav') %>
     <main class="container pt-5">
         <h2 class="text-white">Nuevo Alumno</h2><hr>
     <form action="/add" method="POST">
@@ -15,6 +16,7 @@
         <input type="text"placeholder="Edad"class="form-control"name="age"><br>
         <input type="text"placeholder="Telefono"class="form-control"name="phone"><br>
         <input type="text"placeholder="Correo"class="form-control" name="email"><br>
+        <p>Tipo de pago: </p>
         <select name="plan" id="plan" class="form-select">
             <option value="mensual" selected>Mensual</option>
             <option value="parcial">Parcial</option>
@@ -36,7 +38,7 @@
     </div>
    </div>
         <p class="text-white">Comentarios:</p>
-        <textarea type="text" placeholder="" class="form-control" name="comentarios"></textarea><br>
+        <textarea type="text" placeholder="" class="form-control" name="comentarios"></textarea><br><br>
         <p class="text-white">CONDICIONES DE LOS SERVICIOS Y PRIVACIDAD.</p>
         <p class="text-white">
         Se compartirá contenido multimedia de los estudiantes en las redes sociales para promover la importancia e impacto que tiene la música en los niños, adolescentes y adultos. Todos los datos se guardan de forma segura haciendo uso de servicios en la nube. Los datos podrían ser utilizados para enviar información de forma personalizada y/o privada. Los datos no se comparten con nadie que no sea del equipo de trabajo de Centro Múzico, solo para fines promocionales, informativos y educativos. Se realizarán eventos especiales, como grabación de vídeos y canciones en el estudio y presentaciones. 

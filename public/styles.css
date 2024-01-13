@@ -16,26 +16,28 @@ table{
 
 .tablex{
     width: 100%;
-
     background-color: rgba(69, 24, 112, 0.281);
     border-bottom: 1px solid rgb(218, 96, 218);
     border-bottom: 1px solid rgba(225, 0, 255, 0.336);
-    backdrop-filter: blur(20px);
-    
-    padding: 40px;
+    backdrop-filter: blur(20px);   
     border-radius: 10px;
-    border-radius: 10px;
-    
 }
 
 .tablex .head_tr td{   
+    padding-right:10px;
     background-color: #6e3b8a79;    
     color: aquamarine;
-      
+    padding: 10px;
+    
+    
 }
 
-.tablex .body_tr td{
+.tablex .info_tr td{
+    padding: 10px;
     color: rgba(0, 255, 255, 0.644);
+    padding-right:10px;
+    padding-top: 10px;
+    
     
 }
 
@@ -60,4 +62,30 @@ flex-wrap: wrap;
 }
 hr{
     color: #bc9dcc;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    
+    background-color: rgba(69, 24, 112, 0.281);
+    border-bottom: 1px solid rgb(218, 96, 218);
+    border-bottom: 1px solid rgba(225, 0, 255, 0.336);
+    backdrop-filter: blur(20px);   
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    height: 60px;
+    
+    
+}
+nav a{
+    text-decoration: none;
+}
+.container{
+    margin-top: 100px;
 }

@@ -45,6 +45,17 @@ router.get('/students/:id', (req, res) => {
     
 })
 
+router.get("/delete/:id", (req, res) => {
+    const id = req.params.id;
+      connection.query("DELETE FROM students WHERE id = ?",[id],(error, results) =>{
+            if (error) {
+              throw error;
+            } else {
+                res.redirect('/students') 
+            }
+          }
+        );    
+    });
 
 
 
