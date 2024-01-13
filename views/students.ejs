@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"data-bs-theme="dark">
+<head>
+    <%- include('components/header') %>
+    <title>Alumnos</title>
+</head>
+<body>
+    <main class="container pt-5">
+           <h2 class="">Directorio</h2><hr>
+           <div class="estudiantes_flex">
+                <p>Estudiantes Academia <span class="muzicom">MUZICOM</span> 2024</p>
+                <a href="/register"><i class='bx bxs-plus-circle bx bx-md border rounded-2 p-2 text-primary-subtle bg-primary-subtle text-emphasis'></i></a>               
+            </div>
+        <table class="tablex pb-2 ">
+           <thead >
+               <tr class="head_tr">
+                   <td >NOMBRE</td>
+                   <td >APELLIDOS</td>
+                   <td>TELEFONO</td>
+                   <td>CORREO</td>                   
+                   <td>EDAD</td>
+                   <td>ESCUELA</td>
+                   <td>PLAN</td>
+                   <td>ACCIÓN</td>
+               </tr>
+           </thead>
+           <tbody>
+           
+                
+                    <% students.forEach((student) =>{ %>
+                        
+                        <tr class="info_tr">                
+                                <a href="/">
+                                <td><%= student.name %></td>
+                                <td><%= student.lastname %></td>
+                                <td><%= student.phone %></td>
+                <td><%= student.email %></td>                    
+                <td><%= student.age %></td>
+                <td><%= student.school %></td>
+                <td><%= student.curso %></td>
+                <!-- <td><button class="btn btn-primary-subtle text-primary-subtle border-primary-subtle, text-emphasis bg-primary-subtle">Actualizar</button></td>-->
+                <td>                    
+                <a href="/students/<%= student.id %>"><i class='bx bx-upvote bx bx-md'></i></a>
+                <i class='bx bx-trash-alt bx bx-md'></i>
+                </td>
+            </a>         
+            </tr>
+        <% }) %>  
+                    
+        
+   
+        
+            
+       
+
+           </tbody>
+        </table>
+    </main>
+     
+</body>
+</html>

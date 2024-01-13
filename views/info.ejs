@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <%- include('components/header') %>
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>Document</title>
+</head>
+<body>
+<main class="container pt-5">
+    <% if (info) { %>
+        <% students.forEach((student) =>{ %>              
+          
+                <tr class="body_tr">                
+                    <td class="fs-2">Nombre:&nbsp; <span class="text-primary-emphasis"> <%= student.name %></td>
+                    <td><%= student.lastname %></span></td><br/><hr>
+                    <td>Telefono:&nbsp; <span class="text-primary-emphasis"> <%= student.phone %></span></td><br/>
+                    <td>Email:&nbsp; <span class="text-primary-emphasis"><%= student.email %></span></td>     <br/>               
+                    <td>Edad:&nbsp; <span class="text-primary-emphasis"><%= student.age %></span></td><br/>
+                    <td>Escuela:&nbsp; <span class="text-primary-emphasis"></span><%= student.school %></td><br/>
+                    <td>Grado Escolar:&nbsp; <span class="text-primary-emphasis"><%= student.school_level %></span></td><br/>
+                    <td>Fecha Nacimiento:&nbsp; <span class="text-primary-emphasis"><%= student.birthdate %></span></td><br/>
+                    <td>Familiar:&nbsp; <span class="text-primary-emphasis"><%= student.familiar %></span></td><br/>
+                    <td>Dirección:&nbsp; <span class="text-primary-emphasis"><%= student.direccion %></span></td><br/>
+                    <td>Tipo de clases:&nbsp; <span class="text-primary-emphasis"><%= student.tipo_clases %></span></td><br/>
+                    <td>Curso:&nbsp; <span class="text-primary-emphasis"><%= student.curso %></span></td><br/>
+                    <td>Disponibilidad:&nbsp; <span class="text-primary-emphasis"><%= student.disponibilidad %></span></td><br/>
+                    <td>Personajes favoritos:&nbsp; <span class="text-primary-emphasis"><%= student.personajes_fav %></span></td><br/>
+                    <td>Canciones que le gustan:&nbsp; <span class="text-primary-emphasis"><%= student.canciones %></span></td><br/>
+                    <td>Tiene experiencia en música:&nbsp; <span class="text-primary-emphasis"><%= student.experiencia %></span></td><br/>
+                    <td>Referencias:&nbsp; <span class="text-primary-emphasis"><%= student.referencias %></span></td><br/>
+                    <td>Comentarios:&nbsp; <span class="text-primary-emphasis"><%= student.comentarios %></span></td><br/>
+                    <td>Tipo de curso
+                        <select class="text-primary-emphasis bg-primary-subtle border-primary-subtle" name="plan" id="plan">
+        <option  class="form-control" value="Mensual" selected>Mensual</option>
+        <option value="Parcial">Parcial</option>
+    </select></td><br>
+                    <td>Aceptó condiciones: <%= student.cond_serv_priv %></td><br/>
+    <!-- <td><button class="btn btn-primary-subtle text-primary-subtle border-primary-subtle, text-emphasis bg-primary-subtle">Actualizar</button></td>           -->
+    <td>                    <br>
+    <a href="/students">Regresar    </a>
+    
+    </td>
+</tr>
+         
+<% }) %> 
+<% } %>
+</main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <%- include('components/header') %>
+    <title>Register</title>
+</head>
+<body>
+    <main class="container pt-5">
+        <h2 class="text-white">Nuevo Alumno</h2><hr>
+    <form action="/add" method="POST">
+   <div class="form_flex">
+    <div>
+        <input type="text"placeholder="Nombre" class="form-control" name="name"><br>
+        <input type="text"placeholder="Apellido"class="form-control" name="lastname"><br>
+        <input type="text"placeholder="Edad"class="form-control"name="age"><br>
+        <input type="text"placeholder="Telefono"class="form-control"name="phone"><br>
+        <input type="text"placeholder="Correo"class="form-control" name="email"><br>
+        <select name="plan" id="plan" class="form-select">
+            <option value="mensual" selected>Mensual</option>
+            <option value="parcial">Parcial</option>
+        </select><br/>
+        <input type="text"placeholder="Escuela"class="form-control"name="school"><br>
+        <input type="text" placeholder="Fecha nacimiento" class="form-control" name="birthdate"><br>
+        <input type="text" placeholder="Grado escolar" class="form-control" name="school_level"><br>
+    </div>
+    <div>
+        <input type="text" placeholder="Nombre del padre/madre" class="form-control" name="familiar"><br>
+        <input type="text" placeholder="Dirección" class="form-control" name="direccion"><br>
+        <input type="text" placeholder="Tipo de clases" class="form-control" name="tipo_clases"><br>
+        <input type="text" placeholder="Curso" class="form-control" name="curso"><br>
+        <input type="text" placeholder="Disponibilidad" class="form-control" name="disponibilidad"><br>
+        <input type="text" placeholder="Experiencia" class="form-control" name="experiencia"><br>
+        <input type="text" placeholder="Personajes favoritos" class="form-control" name="personajes_fav"><br>
+        <input type="text" placeholder="Canciones que te gustaría cantar" class="form-control" name="canciones"><br>
+        <input type="text" placeholder="Como te enteraste de nosotros?" class="form-control" name="referencias"><br>
+    </div>
+   </div>
+        <p class="text-white">Comentarios:</p>
+        <textarea type="text" placeholder="" class="form-control" name="comentarios"></textarea><br>
+        <p class="text-white">CONDICIONES DE LOS SERVICIOS Y PRIVACIDAD.</p>
+        <p class="text-white">
+        Se compartirá contenido multimedia de los estudiantes en las redes sociales para promover la importancia e impacto que tiene la música en los niños, adolescentes y adultos. Todos los datos se guardan de forma segura haciendo uso de servicios en la nube. Los datos podrían ser utilizados para enviar información de forma personalizada y/o privada. Los datos no se comparten con nadie que no sea del equipo de trabajo de Centro Múzico, solo para fines promocionales, informativos y educativos. Se realizarán eventos especiales, como grabación de vídeos y canciones en el estudio y presentaciones. 
+    </p>
+        <select name="cond_serv_priv" class="form-select" id="">
+            <option value="acepto">Acepto</option>
+            <option value="no_acepto">no acepto</option>
+        </select><br/><br/>
+        <div>
+        <button class="btn btn-primary">Registrar</button>&nbsp;&nbsp;
+    </form>
+    <a href="/students" class="btn btn-primary">Cancelar</a>        
+</div>
+    </main><br><br><br><br>
+</body>
+</html>

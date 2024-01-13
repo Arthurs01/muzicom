@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+table{
+    padding: 20px;
+}
+
+.tablex{
+    width: 100%;
+
+    background-color: rgba(69, 24, 112, 0.281);
+    border-bottom: 1px solid rgb(218, 96, 218);
+    border-bottom: 1px solid rgba(225, 0, 255, 0.336);
+    backdrop-filter: blur(20px);
+    
+    padding: 40px;
+    border-radius: 10px;
+    border-radius: 10px;
+    
+}
+
+.tablex .head_tr td{   
+    background-color: #6e3b8a79;    
+    color: aquamarine;
+      
+}
+
+.tablex .body_tr td{
+    color: rgba(0, 255, 255, 0.644);
+    
+}
+
+.estudiantes_flex{    
+ margin-bottom: 20px;
+}
+
+
+.muzicom{
+    color: #bb9fb0;
+}
+
+.form-control{
+    width: 300px;
+}
+
+.form_flex{
+    display: flex;
+gap: 100px;
+flex-wrap: wrap;   
+    
+}
+hr{
+    color: #bc9dcc;
+}
